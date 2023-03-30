@@ -1,15 +1,22 @@
 .navbar{
     height: 7em;
     width: 100%;
-    border: 2px solid white;
+    border: 2px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .logo{
+    height: 100px;
+    width: 150px;
+    margin: 10px
   }
   
   .nav-items{
     display: flex;
     justify-content: space-between;
-    border: 2px solid white;
+    border: 2px solid black;
     width: 50%;
+    margin-right: 10px;
   }
