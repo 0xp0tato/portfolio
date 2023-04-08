@@ -1,17 +1,14 @@
+import Stack from "../Stack/Stack";
 import "./TechStack.css";
-
-import FrontendStack from "../FrontendStack/FrontendStack";
-import BackendStack from "../BackendStack/BackendStack";
-import OtherStack from "../OtherStack/OtherStack";
 
 const TechStack = () => {
   return (
     <div className="TechStack">
       <h1>Tech Stack</h1>
       <div className="categories">
-        <FrontendStack />
-        <BackendStack />
-        <OtherStack />
+        <Stack data={"Frontend"} />
+        <Stack data={"Backend"} />
+        <Stack data={"Others"} />
       </div>
     </div>
   );

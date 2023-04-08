@@ -7,11 +7,10 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      {/* <Navbar />
+      <Navbar />
       <Intro />
       <TechStack />
-      <DetailedIntro /> */}
-      <TechStack />
+      <DetailedIntro />
     </div>
   );
 };

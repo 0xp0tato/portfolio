@@ -1,0 +1,13 @@
+.Stack {
+  border: 2px solid black;
+  height: auto;
+  width: 600px;
+  text-align: center;
+}
+
+.logos {
+  border: 2px solid black;
+  display: grid;
+  height: 100px;
+  width: 100%;
+}
