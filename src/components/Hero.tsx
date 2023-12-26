@@ -4,7 +4,10 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center p-8">
+    <div
+      className="bg-gray-100 min-h-screen flex flex-col justify-center items-center p-8"
+      id="home-section"
+    >
       <div className="w-[60%] mx-auto bg-white rounded-lg shadow-xl flex flex-col md:flex-row items-center p-16">
         <div className="md:w-1/2 mb-4 md:mb-0">
           <p className="text-xl text-gray-500">$ whoami</p>

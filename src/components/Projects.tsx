@@ -33,7 +33,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-gray-100 py-16" id="projects-section">
       <div className="container mx-auto">
         <p className="text-3xl font-bold mb-4">Projects</p>
         <p className="text-lg mb-8">Each project is unique in its own way 🧩</p>

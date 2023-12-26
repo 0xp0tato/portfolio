@@ -2,7 +2,7 @@ import { CiMail } from "react-icons/ci";
 
 export default function Contact() {
   return (
-    <div className="bg-gray-200 py-16 text-center">
+    <div className="bg-gray-200 py-16 text-center" id="contact-section">
       <div className="container mx-auto">
         <p className="text-3xl font-bold mb-4">Contact</p>
         <p className="text-lg mb-8">Don't be shy! Hit me up</p>
