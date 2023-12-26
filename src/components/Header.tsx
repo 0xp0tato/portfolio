@@ -1,33 +1,54 @@
 export default function Header() {
+  function handleScroll(area?: string) {
+    if (area) {
+      const element = document.getElementById(area);
+
+      if (element) {
+        // 👇 Will scroll smoothly to the top of the next section
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+  }
+
   return (
     <header className="bg-gray-900 text-white py-4 sticky top-0 z-10">
       <div className="container mx-auto flex justify-between items-center px-8">
-        <p className="text-3xl font-semibold">Ninad Sajwan</p>
+        <button
+          onClick={() => handleScroll()}
+          className="text-3xl font-semibold hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
+        >
+          Ninad Sajwan
+        </button>
         <nav className="flex gap-6">
-          <a
+          <button
             className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
-            href="#home-section"
+            onClick={() => handleScroll("home-section")}
           >
             Home
-          </a>
-          <a
+          </button>
+          <button
             className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
-            href="#about-section"
+            onClick={() => handleScroll("about-section")}
           >
             About
-          </a>
-          <a
+          </button>
+          <button
             className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
-            href="#projects-section"
+            onClick={() => handleScroll("projects-section")}
           >
             Projects
-          </a>
-          <a
+          </button>
+          <button
             className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
-            href="#contact-section"
+            onClick={() => handleScroll("contact-section")}
           >
             Contact
-          </a>
+          </button>
         </nav>
       </div>
     </header>
