@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import resume from "../assets/Ninad_Sajwan_Resume.pdf"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,10 @@ export default function Header() {
         left: 0,
         behavior: 'smooth',
       });
+  }
+
+  function handleResumeClick() {
+    window.open(resume, '_blank');
   }
 
   return (
@@ -52,6 +57,12 @@ export default function Header() {
             onClick={() => handleScroll('contact-section')}
           >
             Contact
+          </button>
+          <button
+            className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
+            onClick={handleResumeClick}
+          >
+            Resume
           </button>
         </div>
         <div className="lg:hidden flex items-center">
@@ -100,6 +111,12 @@ export default function Header() {
                 >
                   Contact
                 </button>
+                <button
+            className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
+            onClick={handleResumeClick}
+          >
+            Resume
+          </button>
               </div>
             </nav>
           )}
