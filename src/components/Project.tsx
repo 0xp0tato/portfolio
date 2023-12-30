@@ -36,7 +36,7 @@ const Project: React.FC<ProjectProps> = (props) => {
             </li>
           ))}
         </ul>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row md:gap-4 items-center">
           <a
             href={githubLink}
             target="_blank"
@@ -52,8 +52,8 @@ const Project: React.FC<ProjectProps> = (props) => {
             rel="noopener noreferrer"
             className="flex items-center text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out"
           >
-            <FiExternalLink className="mr-2" />
             Live Demo
+            <FiExternalLink className="mr-2" />
           </a>
         </div>
       </div>

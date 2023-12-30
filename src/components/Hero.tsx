@@ -3,6 +3,7 @@ import myAvatar from "../assets/8bitpix.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Hero() {
+
   return (
     <div
       className="bg-gray-100 min-h-screen flex flex-col justify-center items-center p-4 lg:p-8"

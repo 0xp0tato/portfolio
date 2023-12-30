@@ -41,6 +41,9 @@ export default function Projects() {
           <Project key={index} {...item} />
         ))}
       </div>
-    </div>
+      <a href="https://github.com/0xp0tato">
+      <p className="text-center text-xl md:text-2xl">And many more... ➡️ </p>
+      </a>
+      </div>
   );
 }
