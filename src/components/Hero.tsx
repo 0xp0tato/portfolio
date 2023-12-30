@@ -1,7 +1,6 @@
 import myImage from "../assets/myself.jpg";
 import myAvatar from "../assets/8bitpix.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
 
 export default function Hero() {
 
