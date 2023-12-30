@@ -1,3 +1,5 @@
+import ReactMarkdown from 'react-markdown'
+
 export default function About() {
   const gradientStyle = {
     background: "-webkit-linear-gradient(45deg, #39425b, #586481)",
@@ -7,7 +9,7 @@ export default function About() {
 
   return (
     <div
-      className="h-[50vh] bg-gray-200 flex flex-col justify-center items-center p-8 rounded-lg shadow-xl"
+      className="bg-gray-200 flex flex-col justify-center items-center p-8 rounded-lg shadow-xl"
       id="about-section"
     >
       <p className="text-4xl font-bold mb-4 text-center text-gray-800" style={gradientStyle}>
@@ -21,6 +23,9 @@ export default function About() {
         Node.js, Firebase 🔥, Stripe 💵, Tailwind CSS, and more. Check out my
         work below! 🚀👨‍💻
       </p>
+      <ReactMarkdown className="mt-8">
+      ![LeetCode Stats](https://leetcard.jacoblin.cool/0xp0tat0?ext=contest&border=0&radius=20)
+      </ReactMarkdown>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import myImage from "../assets/myself.jpg";
 import myAvatar from "../assets/8bitpix.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 export default function Hero() {
 
@@ -26,6 +27,9 @@ export default function Hero() {
                 size="30px"
                 className="text-blue-500 text-xl md:text-2xl hover:text-blue-700 transition duration-300 ease-in-out"
               />
+            </a>
+            <a href="https://leetcode.com/0xp0tat0/" target="_blank" rel="noopener noreferrer">
+              <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png" alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo"/>
             </a>
             <a
               href="https://github.com/0xp0tato"

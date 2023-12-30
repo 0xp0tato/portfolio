@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import resume from "../assets/Ninad_Sajwan_Resume.pdf"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +20,8 @@ export default function Header() {
   }
 
   function handleResumeClick() {
-    window.open(resume, '_blank');
+    const resumeLink = "https://drive.google.com/file/d/19lQOVQmQtDza8ql9ARjs5SZMlbVFvtox/view"
+    window.open(resumeLink, '_blank');
   }
 
   return (
