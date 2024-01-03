@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,19 +9,20 @@ export default function Header() {
 
       if (element) {
         // 👇 Will scroll smoothly to the top of the next section
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     } else
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
   }
 
   function handleResumeClick() {
-    const resumeLink = "https://drive.google.com/file/d/19lQOVQmQtDza8ql9ARjs5SZMlbVFvtox/view"
-    window.open(resumeLink, '_blank');
+    const resumeLink =
+      "https://drive.google.com/file/d/1T1LBkRpVM4jIF03YK-lwtofaNWSbKeye/view?usp=sharing";
+    window.open(resumeLink, "_blank");
   }
 
   return (
@@ -36,25 +37,25 @@ export default function Header() {
         <div className="lg:flex items-center space-x-6 hidden">
           <button
             className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
-            onClick={() => handleScroll('home-section')}
+            onClick={() => handleScroll("home-section")}
           >
             Home
           </button>
           <button
             className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
-            onClick={() => handleScroll('about-section')}
+            onClick={() => handleScroll("about-section")}
           >
             About
           </button>
           <button
             className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
-            onClick={() => handleScroll('projects-section')}
+            onClick={() => handleScroll("projects-section")}
           >
             Projects
           </button>
           <button
             className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
-            onClick={() => handleScroll('contact-section')}
+            onClick={() => handleScroll("contact-section")}
           >
             Contact
           </button>
@@ -70,7 +71,7 @@ export default function Header() {
             onClick={() => setIsOpen(!isOpen)}
             className="text-3xl text-white focus:outline-none"
           >
-            {isOpen ? 'X' : '☰'}
+            {isOpen ? "X" : "☰"}
           </button>
           {isOpen && (
             <nav className="bg-gray-900 absolute top-full left-0 right-0 px-4 py-2">
@@ -78,7 +79,7 @@ export default function Header() {
                 <button
                   className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
                   onClick={() => {
-                    handleScroll('home-section');
+                    handleScroll("home-section");
                     setIsOpen(false);
                   }}
                 >
@@ -87,7 +88,7 @@ export default function Header() {
                 <button
                   className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
                   onClick={() => {
-                    handleScroll('about-section');
+                    handleScroll("about-section");
                     setIsOpen(false);
                   }}
                 >
@@ -96,7 +97,7 @@ export default function Header() {
                 <button
                   className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
                   onClick={() => {
-                    handleScroll('projects-section');
+                    handleScroll("projects-section");
                     setIsOpen(false);
                   }}
                 >
@@ -105,18 +106,18 @@ export default function Header() {
                 <button
                   className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
                   onClick={() => {
-                    handleScroll('contact-section');
+                    handleScroll("contact-section");
                     setIsOpen(false);
                   }}
                 >
                   Contact
                 </button>
                 <button
-            className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
-            onClick={handleResumeClick}
-          >
-            Resume
-          </button>
+                  className="hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer"
+                  onClick={handleResumeClick}
+                >
+                  Resume
+                </button>
               </div>
             </nav>
           )}
