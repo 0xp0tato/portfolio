@@ -20,8 +20,7 @@ export default function Header() {
   }
 
   function handleResumeClick() {
-    const resumeLink =
-      "https://drive.google.com/file/d/1T1LBkRpVM4jIF03YK-lwtofaNWSbKeye/view?usp=sharing";
+    const resumeLink = import.meta.env.VITE_RESUME_LINK;
     window.open(resumeLink, "_blank");
   }
 
