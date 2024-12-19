@@ -73,7 +73,7 @@ export default function Hero() {
         </p>
         <div className="flex gap-2 md:gap-3 justify-center mt-3">
           <img
-            src="https://skillicons.dev/icons?i=html,css,javascript,typescript,c,cpp,python,next,nodejs,express,firebase,tailwind,react,redux,mongodb,mysql"
+            src="https://skillicons.dev/icons?i=html,css,javascript,typescript,c,cpp,java,python,next,nodejs,express,spring,django,firebase,tailwind,react,redux,mongodb,mysql,postgres,redis,aws"
             alt="Tech Stack"
           />
         </div>
