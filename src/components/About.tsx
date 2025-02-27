@@ -24,7 +24,7 @@ export default function About() {
         work below! 🚀👨‍💻
       </p>
       <ReactMarkdown className="mt-8">
-      ![LeetCode Stats](https://leetcard.jacoblin.cool/0xp0tat0?ext=contest&border=0&radius=20)
+      ![LeetCode Stats](https://leetcard.jacoblin.cool/0xp0tato?ext=contest&border=0&radius=20)
       </ReactMarkdown>
     </div>
   );
