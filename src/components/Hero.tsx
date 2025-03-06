@@ -16,8 +16,6 @@ export default function Hero() {
           </p>
           <p className="text-sm md:text-lg text-gray-600 mb-4">
             {">"} A Passionate Developer
-            <br />
-            {">"} Software Engineer @ Squareboat
           </p>
           <div className="flex gap-2 md:gap-3">
             <a
@@ -31,7 +29,7 @@ export default function Hero() {
               />
             </a>
             <a
-              href="https://leetcode.com/0xp0tat0/"
+              href="https://leetcode.com/0xp0tato/"
               target="_blank"
               rel="noopener noreferrer"
             >
